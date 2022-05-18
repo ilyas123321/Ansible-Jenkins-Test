@@ -9,8 +9,17 @@
          name: apache2
          state: present
     -
-        name: configuring web page
-        copy:
-          content: "<h1> this file has been breated from a ci build of jenkins</h1>"
-          dest: /var/www/html/index.html
+       name: configuring web page
+       copy:
+         content: "this file has been breated from a ci build of jenkins"
+         dest: /var/www/html/index.html
+         owner: root
+         group: root
+         mode: 0755
+       ignore_errors: yes 
+    -
+       name: starting webserver services
+       service:
+         name: apache2
+         state: started
   

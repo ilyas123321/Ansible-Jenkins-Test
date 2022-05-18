@@ -11,6 +11,6 @@
     -
         name: configuring web page
         copy:
-          content: "<h1> this file has been breated from a ci build of jenkins</h1>
-          dest: /var/www/html/indiex.html
+          content: "<h1> this file has been breated from a ci build of jenkins</h1>"
+          dest: /var/www/html/index.html
   

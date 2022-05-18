@@ -13,10 +13,7 @@
        copy:
          content: "this file has been breated from a ci build of jenkins"
          dest: /var/www/html/index.html
-         owner: root
-         group: root
-         mode: 0755
-       ignore_errors: yes 
+        
     -
        name: starting webserver services
        service:
